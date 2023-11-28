@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+
+.container {
+  max-width: 1170px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-container {
+  display: flex;
+}
+
+.checkbox-text {
+  font-size: 1.5rem;
+}
+
+.collapse-label {
+  margin-right: 10px;
+  width: 15px;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.checkboxes-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+}
+
+.sub-group {
+  margin-left: 20px;
+}
+
+/*.expandable-group {*/
+/*  max-height: 0;*/
+/*  overflow: hidden;*/
+/*  transition: max-height 0.3s ease-in-out;*/
+/*}*/
+
+/*!* Define the expanded state *!*/
+/*.expandable-group.expanded {*/
+/*  max-height: 50000px; !* Adjust the max-height value as needed *!*/
+/*}*/
+
+
+.ch {
+  margin-left: 25px;
+}
