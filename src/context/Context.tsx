@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useState } from "react";
+import React, { createContext, useCallback, useState, ReactNode } from "react";
 import { categories } from "../data";
 import {
   getAllTopLevelObjects,
@@ -13,9 +13,13 @@ type TContextProps = {
   onCheckboxToggle: (entry: TCategory) => void;
 };
 
+interface IChildren {
+  children: ReactNode;
+}
+
 const CheckboxContext = createContext<TContextProps | null>(null);
 
-const CheckboxContextProvider = ({ children }: any) => {
+const CheckboxContextProvider = ({ children }: IChildren) => {
   const [menu, setMenu] = useState<TCategory[]>(
     getAllTopLevelObjects(categories as TCategory[]),
   );

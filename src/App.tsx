@@ -12,15 +12,15 @@ export type TCategory = {
 };
 
 export const App = () => {
-  // @ts-ignore
-  const { menu } = useContext(CheckboxContext);
+  const checkboxes = useContext(CheckboxContext);
 
   return (
     <div className={"container"}>
       <div className={"checkboxes-group"}>
-        {menu.map((category: TCategory) => (
-          <CheckboxComponent key={category.id} entry={category} />
-        ))}
+        {checkboxes &&
+          checkboxes.menu.map((category: TCategory) => (
+            <CheckboxComponent key={category.id} entry={category} />
+          ))}
       </div>
     </div>
   );
