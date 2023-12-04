@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/checkboxes-nested/static/css/main.03d3ae5e.css",
+    "main.js": "/checkboxes-nested/static/js/main.88736cae.js",
+    "index.html": "/checkboxes-nested/index.html",
+    "main.03d3ae5e.css.map": "/checkboxes-nested/static/css/main.03d3ae5e.css.map",
+    "main.88736cae.js.map": "/checkboxes-nested/static/js/main.88736cae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03d3ae5e.css",
+    "static/js/main.88736cae.js"
+  ]
+}
